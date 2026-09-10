@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gold Experience B2 · Units 6–7 Integrated Practice Exam</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#1f2937;--muted:#64748b;--u6:#5b4bb7;--u7:#b91c5c;--ok:#166534;--bad:#991b1b;--line:#dbe2ea;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.45}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);padding:12px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+header h1{font-size:18px;margin:0;flex:1} button,.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;background:#111827;color:#fff;text-decoration:none;display:inline-block}
+button.secondary,.btn.secondary{background:#e5e7eb;color:#111827}
+main{max-width:1100px;margin:24px auto;padding:0 18px 60px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px}
+.student{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px} input[type=text],input[type=date],textarea{width:100%;border:1px solid #cbd5e1;border-radius:9px;padding:10px;font:inherit}
+.progress{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin-top:12px} .progress>div{height:100%;background:#111827;width:0%}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:16px 0}
+section h2{margin:0 0 8px} .u6 h2{color:var(--u6)} .u7 h2{color:var(--u7)} .mixed h2{color:#0f766e}
+.q{border-top:1px solid #edf1f5;padding:14px 0} .q:first-of-type{border-top:0}
+.qnum{font-weight:800;margin-right:6px} .opts label{display:block;margin:7px 0;padding:8px;border-radius:8px} .opts label:hover{background:#f8fafc}
+.feedback{font-size:13px;font-weight:700;margin-top:6px} .correct{color:var(--ok)} .wrong{color:var(--bad)}
+.small{font-size:13px;color:var(--muted)} .sourcebox{background:#f8fafc;border-left:4px solid #64748b;padding:12px;margin:10px 0}
+.wordbank{background:#f8fafc;padding:10px 12px;border-radius:10px;font-weight:700}
+.listening-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px} .listen-card{border:1px solid var(--line);border-radius:12px;padding:16px}
+textarea{min-height:180px} .writing textarea{min-height:260px} .reading-text{background:#fafafa;border:1px solid var(--line);padding:16px;border-radius:12px;white-space:pre-line}
+.scorebox{font-size:22px;font-weight:900} details{margin-top:14px} summary{cursor:pointer;font-weight:800}
+@media(max-width:700px){.student,.listening-grid{grid-template-columns:1fr} header{position:static}}
+@media print{header,.no-print{display:none!important} body{background:#fff} section,.hero{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+<h1>Gold Experience B2 · Units 6 & 7 · Integrated Practice Exam</h1>
+<button onclick="checkAll()">Check objective answers</button>
+<button class="secondary" onclick="saveProgress()">Save</button>
+<button class="secondary" onclick="window.print()">Print</button>
+<button class="secondary" onclick="resetAll()">Reset</button>
+</header>
+<main>
+<div class="hero">
+<h2>Units 6–7 Comprehensive Practice</h2>
+<p><b>Unit 6: Viewpoints</b> + <b>Unit 7: The Full Story</b>. Extensive vocabulary, phrasal verbs, word formation, passive voice, have/get something done, reported speech, reporting verbs, Use of English, reading, listening, writing and speaking.</p>
+<div class="student">
+<input id="student" type="text" placeholder="Student name">
+<input id="class" type="text" placeholder="Class">
+<input id="date" type="date">
+</div>
+<div class="progress"><div id="bar"></div></div>
+<p id="score" class="scorebox">Score: —</p>
+<p class="small">Free-response rewriting items are included for practice. The automatic score counts multiple choice and short-answer items where a single answer is expected.</p>
+</div>
+
+<section class="mixed">
+<h2>Exam Map</h2>
+<p><b>Part A:</b> Unit 6 vocabulary and word formation · <b>Part B:</b> Unit 6 grammar and book review · <b>Part C:</b> Unit 7 vocabulary, phrasal verbs and prepositions · <b>Part D:</b> reported speech and reporting verbs · <b>Part E:</b> mixed word formation and transformations · <b>Part F:</b> reading · <b>Part G:</b> listening · <b>Part H:</b> writing · <b>Part I:</b> speaking.</p>
+</section>
+<section class="u6"><h2>Unit 6 · Vocabulary: Time &amp; Place</h2><div class="q" data-type="mc" data-answer="at" id="q1"><span class="qnum">1.</span>We arrived ___ the museum just before it closed.<div class="opts"><label><input type="radio" name="q1" value="at"> at</label><label><input type="radio" name="q1" value="in"> in</label><label><input type="radio" name="q1" value="on"> on</label><label><input type="radio" name="q1" value="to"> to</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="for" id="q2"><span class="qnum">2.</span>I haven&#x27;t seen her ___ ages.<div class="opts"><label><input type="radio" name="q2" value="since"> since</label><label><input type="radio" name="q2" value="for"> for</label><label><input type="radio" name="q2" value="during"> during</label><label><input type="radio" name="q2" value="from"> from</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="on" id="q3"><span class="qnum">3.</span>We were ___ the point of leaving when Jack arrived.<div class="opts"><label><input type="radio" name="q3" value="in"> in</label><label><input type="radio" name="q3" value="at"> at</label><label><input type="radio" name="q3" value="on"> on</label><label><input type="radio" name="q3" value="by"> by</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="late" id="q4"><span class="qnum">4.</span>The train was running ___ because of bad weather.<div class="opts"><label><input type="radio" name="q4" value="late"> late</label><label><input type="radio" name="q4" value="lately"> lately</label><label><input type="radio" name="q4" value="later"> later</label><label><input type="radio" name="q4" value="latest"> latest</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="on" id="q5"><span class="qnum">5.</span>Please be ___ time for the meeting.<div class="opts"><label><input type="radio" name="q5" value="at"> at</label><label><input type="radio" name="q5" value="in"> in</label><label><input type="radio" name="q5" value="on"> on</label><label><input type="radio" name="q5" value="by"> by</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="in" id="q6"><span class="qnum">6.</span>I got there just ___ time to see the beginning.<div class="opts"><label><input type="radio" name="q6" value="at"> at</label><label><input type="radio" name="q6" value="in"> in</label><label><input type="radio" name="q6" value="on"> on</label><label><input type="radio" name="q6" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="By" id="q7"><span class="qnum">7.</span>___ the time we arrived, the exhibition had closed.<div class="opts"><label><input type="radio" name="q7" value="At"> At</label><label><input type="radio" name="q7" value="By"> By</label><label><input type="radio" name="q7" value="In"> In</label><label><input type="radio" name="q7" value="On"> On</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="with" id="q8"><span class="qnum">8.</span>The project began ___ a short presentation.<div class="opts"><label><input type="radio" name="q8" value="with"> with</label><label><input type="radio" name="q8" value="at"> at</label><label><input type="radio" name="q8" value="for"> for</label><label><input type="radio" name="q8" value="by"> by</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="up" id="q9"><span class="qnum">9.</span>We need to keep ___ the momentum.<div class="opts"><label><input type="radio" name="q9" value="up"> up</label><label><input type="radio" name="q9" value="on"> on</label><label><input type="radio" name="q9" value="in"> in</label><label><input type="radio" name="q9" value="at"> at</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="throughout" id="q10"><span class="qnum">10.</span>The documentary was shown ___ the country.<div class="opts"><label><input type="radio" name="q10" value="throughout"> throughout</label><label><input type="radio" name="q10" value="through"> through</label><label><input type="radio" name="q10" value="acrossed"> acrossed</label><label><input type="radio" name="q10" value="between"> between</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="accelerate" id="q11"><span class="qnum">11.</span>The number of visitors began to ___.<div class="opts"><label><input type="radio" name="q11" value="accelerate"> accelerate</label><label><input type="radio" name="q11" value="acceleration"> acceleration</label><label><input type="radio" name="q11" value="accelerated"> accelerated</label><label><input type="radio" name="q11" value="accelerating"> accelerating</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="expand" id="q12"><span class="qnum">12.</span>The exhibition will ___ later this year.<div class="opts"><label><input type="radio" name="q12" value="expand"> expand</label><label><input type="radio" name="q12" value="expansion"> expansion</label><label><input type="radio" name="q12" value="expanded"> expanded</label><label><input type="radio" name="q12" value="expansive"> expansive</label></div><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Book Review: Passive Forms</h2><div class="q" data-type="mc" data-answer="been seen" id="q13"><span class="qnum">13.</span>Wild boar haven&#x27;t ___ for many years in the local forests.<div class="opts"><label><input type="radio" name="q13" value="been seen"> been seen</label><label><input type="radio" name="q13" value="seen"> seen</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="taken" id="q14"><span class="qnum">14.</span>The production of the film ought to be ___ less time than it did.<div class="opts"><label><input type="radio" name="q14" value="taken"> taken</label><label><input type="radio" name="q14" value="have taken"> have taken</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="said" id="q15"><span class="qnum">15.</span>Eagles are ___ to represent power and freedom.<div class="opts"><label><input type="radio" name="q15" value="said"> said</label><label><input type="radio" name="q15" value="have said"> have said</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="will be held" id="q16"><span class="qnum">16.</span>The photography competition ___ at the end of the summer term.<div class="opts"><label><input type="radio" name="q16" value="will be held"> will be held</label><label><input type="radio" name="q16" value="will hold"> will hold</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="we hadn&#x27;t been told" id="q17"><span class="qnum">17.</span>Unfortunately, ___ about his latest exhibition.<div class="opts"><label><input type="radio" name="q17" value="it hadn&#x27;t been told"> it hadn&#x27;t been told</label><label><input type="radio" name="q17" value="we hadn&#x27;t been told"> we hadn&#x27;t been told</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="were being warned" id="q18"><span class="qnum">18.</span>While the children ___ about the dangers of the sea, the surfers were riding the huge waves!<div class="opts"><label><input type="radio" name="q18" value="should be warned"> should be warned</label><label><input type="radio" name="q18" value="were being warned"> were being warned</label></div><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Vocabulary: Storytelling</h2><div class="q" data-type="mc" data-answer="main character" id="q19"><span class="qnum">19.</span>The person with the biggest role in a story is the ___.<div class="opts"><label><input type="radio" name="q19" value="main character"> main character</label><label><input type="radio" name="q19" value="publisher"> publisher</label><label><input type="radio" name="q19" value="passage"> passage</label><label><input type="radio" name="q19" value="genre"> genre</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="series" id="q20"><span class="qnum">20.</span>A set of books or TV programmes with the same characters is a ___.<div class="opts"><label><input type="radio" name="q20" value="series"> series</label><label><input type="radio" name="q20" value="scene"> scene</label><label><input type="radio" name="q20" value="passage"> passage</label><label><input type="radio" name="q20" value="print"> print</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="complicated plot" id="q21"><span class="qnum">21.</span>A difficult sequence of events in a story can be called a ___.<div class="opts"><label><input type="radio" name="q21" value="complicated plot"> complicated plot</label><label><input type="radio" name="q21" value="happy ending"> happy ending</label><label><input type="radio" name="q21" value="rave review"> rave review</label><label><input type="radio" name="q21" value="final scene"> final scene</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="publisher" id="q22"><span class="qnum">22.</span>A company that arranges the production and sale of books is a ___.<div class="opts"><label><input type="radio" name="q22" value="publisher"> publisher</label><label><input type="radio" name="q22" value="character"> character</label><label><input type="radio" name="q22" value="genre"> genre</label><label><input type="radio" name="q22" value="script"> script</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="passage" id="q23"><span class="qnum">23.</span>A short part of a book is a ___.<div class="opts"><label><input type="radio" name="q23" value="passage"> passage</label><label><input type="radio" name="q23" value="series"> series</label><label><input type="radio" name="q23" value="novel"> novel</label><label><input type="radio" name="q23" value="ending"> ending</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="unexpected twist" id="q24"><span class="qnum">24.</span>A surprising change in a story is an ___.<div class="opts"><label><input type="radio" name="q24" value="unexpected twist"> unexpected twist</label><label><input type="radio" name="q24" value="weak storyline"> weak storyline</label><label><input type="radio" name="q24" value="main character"> main character</label><label><input type="radio" name="q24" value="final scene"> final scene</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="rave" id="q25"><span class="qnum">25.</span>The film received ___ reviews from critics.<div class="opts"><label><input type="radio" name="q25" value="rave"> rave</label><label><input type="radio" name="q25" value="ripped"> ripped</label><label><input type="radio" name="q25" value="blank"> blank</label><label><input type="radio" name="q25" value="short"> short</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="predictable" id="q26"><span class="qnum">26.</span>The plot was easy to guess. It was very ___.<div class="opts"><label><input type="radio" name="q26" value="predictable"> predictable</label><label><input type="radio" name="q26" value="memorable"> memorable</label><label><input type="radio" name="q26" value="spooky"> spooky</label><label><input type="radio" name="q26" value="eye-catching"> eye-catching</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="spooky" id="q27"><span class="qnum">27.</span>The horror film was extremely ___.<div class="opts"><label><input type="radio" name="q27" value="spooky"> spooky</label><label><input type="radio" name="q27" value="genuine"> genuine</label><label><input type="radio" name="q27" value="limited"> limited</label><label><input type="radio" name="q27" value="successful"> successful</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="eye-catching" id="q28"><span class="qnum">28.</span>The special effects were very ___.<div class="opts"><label><input type="radio" name="q28" value="eye-catching"> eye-catching</label><label><input type="radio" name="q28" value="ashamed"> ashamed</label><label><input type="radio" name="q28" value="ripe"> ripe</label><label><input type="radio" name="q28" value="blank"> blank</label></div><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Prepositional Phrases &amp; Adjective + Preposition</h2><div class="q" data-type="mc" data-answer="at" id="q29"><span class="qnum">29.</span>I&#x27;m not sure but ___ a guess, I&#x27;d say we&#x27;re nearly there.<div class="opts"><label><input type="radio" name="q29" value="at"> at</label><label><input type="radio" name="q29" value="in"> in</label><label><input type="radio" name="q29" value="on"> on</label><label><input type="radio" name="q29" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="of" id="q30"><span class="qnum">30.</span>She&#x27;s very capable ___ writing believable dialogue.<div class="opts"><label><input type="radio" name="q30" value="of"> of</label><label><input type="radio" name="q30" value="to"> to</label><label><input type="radio" name="q30" value="at"> at</label><label><input type="radio" name="q30" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="to" id="q31"><span class="qnum">31.</span>The film is similar ___ the book.<div class="opts"><label><input type="radio" name="q31" value="to"> to</label><label><input type="radio" name="q31" value="with"> with</label><label><input type="radio" name="q31" value="at"> at</label><label><input type="radio" name="q31" value="of"> of</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="in" id="q32"><span class="qnum">32.</span>He is very interested ___ science fiction.<div class="opts"><label><input type="radio" name="q32" value="in"> in</label><label><input type="radio" name="q32" value="on"> on</label><label><input type="radio" name="q32" value="at"> at</label><label><input type="radio" name="q32" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="for" id="q33"><span class="qnum">33.</span>The director is famous ___ his visual style.<div class="opts"><label><input type="radio" name="q33" value="for"> for</label><label><input type="radio" name="q33" value="of"> of</label><label><input type="radio" name="q33" value="at"> at</label><label><input type="radio" name="q33" value="to"> to</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="at" id="q34"><span class="qnum">34.</span>I was surprised ___ the ending.<div class="opts"><label><input type="radio" name="q34" value="at"> at</label><label><input type="radio" name="q34" value="of"> of</label><label><input type="radio" name="q34" value="to"> to</label><label><input type="radio" name="q34" value="in"> in</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="to" id="q35"><span class="qnum">35.</span>The author is dedicated ___ her work.<div class="opts"><label><input type="radio" name="q35" value="to"> to</label><label><input type="radio" name="q35" value="for"> for</label><label><input type="radio" name="q35" value="at"> at</label><label><input type="radio" name="q35" value="with"> with</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="of" id="q36"><span class="qnum">36.</span>He felt ashamed ___ his behaviour.<div class="opts"><label><input type="radio" name="q36" value="of"> of</label><label><input type="radio" name="q36" value="for"> for</label><label><input type="radio" name="q36" value="to"> to</label><label><input type="radio" name="q36" value="in"> in</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="in" id="q37"><span class="qnum">37.</span>The story was successful ___ keeping me interested.<div class="opts"><label><input type="radio" name="q37" value="in"> in</label><label><input type="radio" name="q37" value="at"> at</label><label><input type="radio" name="q37" value="for"> for</label><label><input type="radio" name="q37" value="to"> to</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="on" id="q38"><span class="qnum">38.</span>The film is based ___ a true story.<div class="opts"><label><input type="radio" name="q38" value="on"> on</label><label><input type="radio" name="q38" value="at"> at</label><label><input type="radio" name="q38" value="in"> in</label><label><input type="radio" name="q38" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="In" id="q39"><span class="qnum">39.</span>___ conclusion, the book is worth reading.<div class="opts"><label><input type="radio" name="q39" value="In"> In</label><label><input type="radio" name="q39" value="On"> On</label><label><input type="radio" name="q39" value="At"> At</label><label><input type="radio" name="q39" value="By"> By</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="on" id="q40"><span class="qnum">40.</span>I read the article ___ my way home.<div class="opts"><label><input type="radio" name="q40" value="on"> on</label><label><input type="radio" name="q40" value="in"> in</label><label><input type="radio" name="q40" value="at"> at</label><label><input type="radio" name="q40" value="by"> by</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="at" id="q41"><span class="qnum">41.</span>We bought the tickets ___ short notice.<div class="opts"><label><input type="radio" name="q41" value="at"> at</label><label><input type="radio" name="q41" value="in"> in</label><label><input type="radio" name="q41" value="on"> on</label><label><input type="radio" name="q41" value="for"> for</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="on" id="q42"><span class="qnum">42.</span>The book is available ___ loan from the library.<div class="opts"><label><input type="radio" name="q42" value="on"> on</label><label><input type="radio" name="q42" value="at"> at</label><label><input type="radio" name="q42" value="for"> for</label><label><input type="radio" name="q42" value="in"> in</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="At" id="q43"><span class="qnum">43.</span>___ first, I didn&#x27;t understand the story.<div class="opts"><label><input type="radio" name="q43" value="At"> At</label><label><input type="radio" name="q43" value="In"> In</label><label><input type="radio" name="q43" value="On"> On</label><label><input type="radio" name="q43" value="For"> For</label></div><div class="feedback"></div></div></section><section class="mixed"><h2>Reading · Units 6–7 Integrated</h2><div class="q" data-type="mc" data-answer="To encourage critical evaluation of visual information and stories" id="q44"><span class="qnum">44.</span>What is the main purpose of the text?<div class="opts"><label><input type="radio" name="q44" value="To argue that all online images are false"> To argue that all online images are false</label><label><input type="radio" name="q44" value="To encourage critical evaluation of visual information and stories"> To encourage critical evaluation of visual information and stories</label><label><input type="radio" name="q44" value="To explain how cameras work"> To explain how cameras work</label><label><input type="radio" name="q44" value="To promote social media"> To promote social media</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="They communicate ideas quickly" id="q45"><span class="qnum">45.</span>Why are photographs powerful according to the writer?<div class="opts"><label><input type="radio" name="q45" value="They are always reliable"> They are always reliable</label><label><input type="radio" name="q45" value="They communicate ideas quickly"> They communicate ideas quickly</label><label><input type="radio" name="q45" value="They are difficult to edit"> They are difficult to edit</label><label><input type="radio" name="q45" value="They replace written information"> They replace written information</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="It may still mislead if context is missing" id="q46"><span class="qnum">46.</span>What does the writer say about a genuine photograph?<div class="opts"><label><input type="radio" name="q46" value="It can never mislead people"> It can never mislead people</label><label><input type="radio" name="q46" value="It may still mislead if context is missing"> It may still mislead if context is missing</label><label><input type="radio" name="q46" value="It should not be published online"> It should not be published online</label><label><input type="radio" name="q46" value="It is more useful than text"> It is more useful than text</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="They can spread quickly despite being inaccurate" id="q47"><span class="qnum">47.</span>What similar problem do online stories create?<div class="opts"><label><input type="radio" name="q47" value="They can spread quickly despite being inaccurate"> They can spread quickly despite being inaccurate</label><label><input type="radio" name="q47" value="They are too long"> They are too long</label><label><input type="radio" name="q47" value="They are only read by teenagers"> They are only read by teenagers</label><label><input type="radio" name="q47" value="They cannot influence opinions"> They cannot influence opinions</label></div><div class="feedback"></div></div><div class="q" data-type="mc" data-answer="Taking time to examine information" id="q48"><span class="qnum">48.</span>What does being critical mean in the final paragraph?<div class="opts"><label><input type="radio" name="q48" value="Refusing to believe anything"> Refusing to believe anything</label><label><input type="radio" name="q48" value="Taking time to examine information"> Taking time to examine information</label><label><input type="radio" name="q48" value="Avoiding all social media"> Avoiding all social media</label><label><input type="radio" name="q48" value="Only trusting photographs"> Only trusting photographs</label></div><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Word Formation</h2><div class="q" data-type="fill" data-free="false" data-answer="behaviour" id="q49"><span class="qnum">49.</span>The documentary shows the animal&#x27;s unusual _________. (BEHAVE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="environmental" id="q50"><span class="qnum">50.</span>The project focuses on _________ problems. (ENVIRONMENT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="exciting" id="q51"><span class="qnum">51.</span>The film was incredibly _________. (EXCITE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="confident" id="q52"><span class="qnum">52.</span>She sounded very _________ during the interview. (CONFIDENCE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="deadly" id="q53"><span class="qnum">53.</span>Some species can be _________ to humans. (DEAD)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="poisonous" id="q54"><span class="qnum">54.</span>The snake is highly _________. (POISON)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="accuracy" id="q55"><span class="qnum">55.</span>The _________ of the measurements is important. (ACCURATE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="arrival" id="q56"><span class="qnum">56.</span>Their late _________ caused problems. (ARRIVE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="enthusiasm" id="q57"><span class="qnum">57.</span>The teacher spoke with great _________. (ENTHUSIASTIC)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="failure" id="q58"><span class="qnum">58.</span>The experiment ended in _________. (FAIL)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="inhabitants" id="q59"><span class="qnum">59.</span>The island has very few permanent _________. (INHABIT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="naturalist" id="q60"><span class="qnum">60.</span>He is a well-known _________. (NATURE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="shortage" id="q61"><span class="qnum">61.</span>There is a serious water _________. (SHORT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="variety" id="q62"><span class="qnum">62.</span>The project studies the _________ of wildlife in the region. (VARY)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="daily" id="q63"><span class="qnum">63.</span>The population is checked on a _________ basis. (DAY)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="dramatically" id="q64"><span class="qnum">64.</span>The situation changed _________. (DRAMATIC)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="occasionally" id="q65"><span class="qnum">65.</span>We only visit the area _________. (OCCASION)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="depth" id="q66"><span class="qnum">66.</span>The cave has an impressive _________. (DEEP)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="height" id="q67"><span class="qnum">67.</span>The building&#x27;s _________ is 40 metres. (HIGH)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="width" id="q68"><span class="qnum">68.</span>The _________ of the river surprised us. (WIDE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="widened" id="q69"><span class="qnum">69.</span>The bridge was recently _________. (WIDE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="strengthen" id="q70"><span class="qnum">70.</span>Exercise can _________ your muscles. (STRONG)<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Grammar: Passive Voice</h2><div class="q" data-type="fill" data-free="true" data-answer="Many wildlife documentaries are filmed in this area." id="q71"><span class="qnum">71.</span>Rewrite in the passive: People film many wildlife documentaries in this area.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="A new visitor centre is being built." id="q72"><span class="qnum">72.</span>Rewrite in the passive: They are building a new visitor centre.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The camera had been damaged before we arrived." id="q73"><span class="qnum">73.</span>Rewrite in the passive: Someone had damaged the camera before we arrived.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The winners will be announced tomorrow." id="q74"><span class="qnum">74.</span>Rewrite in the passive: They will announce the winners tomorrow.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Eagles are said to represent freedom." id="q75"><span class="qnum">75.</span>Rewrite in the passive: People say that eagles represent freedom.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The animal is believed to live in this region." id="q76"><span class="qnum">76.</span>Rewrite in the passive: People believe that the animal lives in this region.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Visitors should be warned about the danger." id="q77"><span class="qnum">77.</span>Rewrite in the passive: They should warn visitors about the danger.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The photograph must have been taken from above." id="q78"><span class="qnum">78.</span>Rewrite in the passive: Someone must have taken the photograph from above.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The production time ought to be reduced." id="q79"><span class="qnum">79.</span>Rewrite in the passive: They ought to reduce the production time.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Wild boar have been seen in the local forests." id="q80"><span class="qnum">80.</span>Rewrite in the passive: People have seen wild boar in the local forests.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Grammar: Have/Get Something Done</h2><div class="q" data-type="fill" data-free="true" data-answer="I had my camera repaired yesterday." id="q81"><span class="qnum">81.</span>Rewrite using have/get something done: A technician repaired my camera yesterday.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="We are having our class photo taken tomorrow." id="q82"><span class="qnum">82.</span>Rewrite using have/get something done: A photographer is taking our class photo tomorrow.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Stella gets her room painted every two years." id="q83"><span class="qnum">83.</span>Rewrite using have/get something done: Someone paints Stella&#x27;s room every two years.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="I&#x27;m going to have my bike serviced." id="q84"><span class="qnum">84.</span>Rewrite using have/get something done: A mechanic is going to service my bike.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Alex had his hair cut last week." id="q85"><span class="qnum">85.</span>Rewrite using have/get something done: A hairdresser cut Alex&#x27;s hair last week.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="I had my new camera stolen." id="q86"><span class="qnum">86.</span>Rewrite using have/get something done: Someone stole my new camera.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="We had the invitations made for us." id="q87"><span class="qnum">87.</span>Rewrite using have/get something done: A designer made the invitations for us.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="They are having their house decorated." id="q88"><span class="qnum">88.</span>Rewrite using have/get something done: Someone is decorating their house.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Book Review: Wordlist Practice</h2><div class="sourcebox"><b>Review material from the Unit 6 review pages.</b> Complete using items from the unit wordlist.</div><div class="q" data-type="fill" data-free="false" data-answer="poisonous" id="q89"><span class="qnum">89.</span>Be careful! There are some _________ snakes in the forest and their bite can be deadly.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="survival strategies" id="q90"><span class="qnum">90.</span>Most animals develop _________ that help them to overcome all the difficulties of living in a hostile environment.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="blur" id="q91"><span class="qnum">91.</span>Clever filming techniques meant that we could see more than just a _________ when animals moved fast.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="sequence" id="q92"><span class="qnum">92.</span>The _________ of images was very cleverly put together to show the passing of time.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="expand" id="q93"><span class="qnum">93.</span>Learning more about the world helps you to _________ your own understanding and knowledge about things.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="combination" id="q94"><span class="qnum">94.</span>His photography stands out because it&#x27;s a _________ of clever angles and a concern for wildlife.<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="u6"><h2>Unit 6 · Book Review: Have/Get/Need</h2><div class="q" data-type="fill" data-free="false" data-answer="needs" id="q95"><span class="qnum">95.</span>What still _________ doing to get the house ready?<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="had" id="q96"><span class="qnum">96.</span>Unfortunately, I _________ my new camera stolen.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="got" id="q97"><span class="qnum">97.</span>The teacher _________ the student to explain his viewpoint more clearly to the class.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="need" id="q98"><span class="qnum">98.</span>My friends didn&#x27;t _________ to be asked – they all helped me voluntarily.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="having" id="q99"><span class="qnum">99.</span>Stella is _________ her room painted red and black!<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="get" id="q100"><span class="qnum">100.</span>I&#x27;m going to _________ this project done today.<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Phrasal Verbs</h2><div class="q" data-type="fill" data-free="false" data-answer="figure out" id="q101"><span class="qnum">101.</span>I finally managed to _________ what the ending meant.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="leave out" id="q102"><span class="qnum">102.</span>Don&#x27;t _________ any important details from your story.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="taken in" id="q103"><span class="qnum">103.</span>He was completely _________ by the fake review.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="goes for" id="q104"><span class="qnum">104.</span>She always _________ a good mystery novel.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="fell for" id="q105"><span class="qnum">105.</span>I can&#x27;t believe you _________ that ridiculous story!<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="gave in" id="q106"><span class="qnum">106.</span>After arguing for an hour, he finally _________.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="look up" id="q107"><span class="qnum">107.</span>Please _________ the word if you don&#x27;t know what it means.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="cheer up" id="q108"><span class="qnum">108.</span>The party will _________ me _________ after the exam.<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Grammar: Reported Speech</h2><div class="q" data-type="fill" data-free="true" data-answer="Will asked me if I was going to watch the film the following week." id="q109"><span class="qnum">109.</span>Report the sentence: “Are you going to watch the film next week?” Will asked me.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Emma said that she had written her first short story." id="q110"><span class="qnum">110.</span>Report the sentence: “I’ve written my first short story,” Emma said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="She told them to send her a text with the title of the book." id="q111"><span class="qnum">111.</span>Report the sentence: “Send me a text with the title of the book,” she told them.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="He asked her if he could see her that evening." id="q112"><span class="qnum">112.</span>Report the sentence: “Can I see you this evening?” he asked her.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="She said that she had not enjoyed writing her first novel." id="q113"><span class="qnum">113.</span>Report the sentence: “She didn’t enjoy writing her first novel,” she said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="They told him that he would love the new TV series." id="q114"><span class="qnum">114.</span>Report the sentence: “You’ll love the new TV series,” they told him.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Amy asked me where I had bought that book." id="q115"><span class="qnum">115.</span>Report the sentence: “Where did you buy this book?” Amy asked me.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Sam told us not to tell anyone the ending." id="q116"><span class="qnum">116.</span>Report the sentence: “Don’t tell anyone the ending,” Sam told us.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Jake said that he was reading a brilliant novel." id="q117"><span class="qnum">117.</span>Report the sentence: “I’m reading a brilliant novel,” Jake said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="She asked me if I had seen the film." id="q118"><span class="qnum">118.</span>Report the sentence: “Have you seen the film?” she asked me.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Reporting Verbs</h2><div class="q" data-type="fill" data-free="true" data-answer="Lucy apologised for missing the film." id="q119"><span class="qnum">119.</span>Rewrite using a suitable reporting verb: “I’m sorry we missed the film,” Lucy said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Joe’s mum reminded him to take the cinema tickets." id="q120"><span class="qnum">120.</span>Rewrite using a suitable reporting verb: “Don’t forget to take your cinema tickets,” Joe’s mum said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Sam denied telling Becky the ending." id="q121"><span class="qnum">121.</span>Rewrite using a suitable reporting verb: “I didn’t tell Becky the ending,” Sam said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Their dad threatened to stop the film if they were not quiet." id="q122"><span class="qnum">122.</span>Rewrite using a suitable reporting verb: “I’ll stop the film if you’re not quiet!” their dad said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="My teacher recommended reading the novel." id="q123"><span class="qnum">123.</span>Rewrite using a suitable reporting verb: “You should read this novel,” my teacher said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Ben admitted breaking the DVD player." id="q124"><span class="qnum">124.</span>Rewrite using a suitable reporting verb: “Yes, I broke the DVD player,” Ben said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="They invited me to go to the film festival with them." id="q125"><span class="qnum">125.</span>Rewrite using a suitable reporting verb: “Come to the film festival with us,” they said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Ella insisted that I watch the documentary." id="q126"><span class="qnum">126.</span>Rewrite using a suitable reporting verb: “You must watch this documentary,” Ella said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Max agreed to help me write the review." id="q127"><span class="qnum">127.</span>Rewrite using a suitable reporting verb: “I’ll help you write the review,” Max said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="The author refused to change the ending." id="q128"><span class="qnum">128.</span>Rewrite using a suitable reporting verb: “No, I won’t change the ending,” the author said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Dad warned me to be careful with that camera." id="q129"><span class="qnum">129.</span>Rewrite using a suitable reporting verb: “Be careful with that camera,” Dad said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div><div class="q" data-type="fill" data-free="true" data-answer="Ana suggested watching a comedy." id="q130"><span class="qnum">130.</span>Rewrite using a suitable reporting verb: “Why don’t we watch a comedy?” Ana said.<textarea rows="2" placeholder="Write your answer"></textarea><div class="feedback"></div></div></section><section class="u7"><h2>Unit 7 · Book Review: Phrasals, Prepositions &amp; Adjectives</h2><div class="sourcebox"><b>Review material from the Unit 7 Unit Check.</b></div><div class="q" data-type="fill" data-free="false" data-answer="a guess" id="q131"><span class="qnum">131.</span>I&#x27;m not sure but at _________ I&#x27;d say we&#x27;re nearly there.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="typical" id="q132"><span class="qnum">132.</span>Charlie has left his book at home again. That&#x27;s so _________ of him!<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="look" id="q133"><span class="qnum">133.</span>Guess what? My book&#x27;s going to be printed. Things are finally beginning to _________ up for me!<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="figure" id="q134"><span class="qnum">134.</span>The book was very confusing. Half the time I couldn&#x27;t _________ out what was happening.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="short notice" id="q135"><span class="qnum">135.</span>I&#x27;m sorry to ask this at _________ but could you spare five minutes to read my story. It&#x27;s urgent.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="slow" id="q136"><span class="qnum">136.</span>She&#x27;s very _________ at reading because of a problem with her eyesight.<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="mixed"><h2>Mixed Units 6–7 · Extra Word Formation</h2><div class="q" data-type="fill" data-free="false" data-answer="perspective" id="q137"><span class="qnum">137.</span>The article gave a very balanced _________ of the issue. (PERSPECTIVE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="functional" id="q138"><span class="qnum">138.</span>The new camera is small but highly _________. (FUNCTION)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="dramatic" id="q139"><span class="qnum">139.</span>The population increase has been _________. (DRAMA)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="enthusiastic" id="q140"><span class="qnum">140.</span>The speaker gave an _________ explanation. (ENTHUSIASM)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="unpredictable" id="q141"><span class="qnum">141.</span>The film&#x27;s ending was completely _________. (PREDICT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="absorbing" id="q142"><span class="qnum">142.</span>The story was so _________ that I couldn&#x27;t stop reading. (ABSORB)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="memorable" id="q143"><span class="qnum">143.</span>The actor gave a very _________ performance. (MEMORY)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="adaptation" id="q144"><span class="qnum">144.</span>The documentary was a successful film _________. (ADAPT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="distinctive" id="q145"><span class="qnum">145.</span>The director is known for his _________ visual style. (DISTINCT)<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="persuasively" id="q146"><span class="qnum">146.</span>The article was written very _________. (PERSUADE)<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section><section class="mixed"><h2>Mixed Units 6–7 · Key Word Transformations</h2><div class="q" data-type="fill" data-free="false" data-answer="is believed to be" id="q147"><span class="qnum">147.</span>People believe that the picture is authentic. | BELIEVED | The picture _________ authentic.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="had my laptop repaired" id="q148"><span class="qnum">148.</span>A professional repaired my laptop. | HAD | I _________ by a professional.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="are having our classroom painted" id="q149"><span class="qnum">149.</span>Someone is painting our classroom. | HAVING | We _________.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="recommended reading" id="q150"><span class="qnum">150.</span>“You should read the book,” Mia said. | RECOMMENDED | Mia _________ the book.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="denied copying" id="q151"><span class="qnum">151.</span>“I didn’t copy the story,” Tom said. | DENIED | Tom _________ the story.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="invited me to come" id="q152"><span class="qnum">152.</span>“Please come to the event,” Eva said. | INVITED | Eva _________ to the event.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="is said to be" id="q153"><span class="qnum">153.</span>People say the director is very talented. | SAID | The director _________ very talented.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="had my passport photo taken" id="q154"><span class="qnum">154.</span>A photographer took my passport photo. | HAD | I _________.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="reminded me to take" id="q155"><span class="qnum">155.</span>“Don’t forget the tickets,” Mum said. | REMINDED | Mum _________ the tickets.<input type="text" placeholder="Your answer"><div class="feedback"></div></div><div class="q" data-type="fill" data-free="false" data-answer="offered to help" id="q156"><span class="qnum">156.</span>“I’ll help you,” Leo said. | OFFERED | Leo _________ me.<input type="text" placeholder="Your answer"><div class="feedback"></div></div></section>
+<section class="u6"><h2>Unit 6 · REVIEW — Exact Book Practice</h2><div class="sourcebox"><b>Wordlist focus:</b> time and place · suffixes · irregular noun changes · Other vocabulary.</div><div class="q " data-type="fill" data-free="false" data-answer="poisonous" id="book1001">
+      <span class="qnum">•</span>Be careful! There are some ______ snakes in the forest and their bite can be deadly.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="survival strategies" id="book1002">
+      <span class="qnum">•</span>Most animals develop ______ that help them to overcome all the difficulties of living in a hostile environment.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="blur" id="book1003">
+      <span class="qnum">•</span>Clever filming techniques meant that we could see more than just a ______ when animals moved fast.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="sequence" id="book1004">
+      <span class="qnum">•</span>The ______ of images was very cleverly put together to show the passing of time.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="expand" id="book1005">
+      <span class="qnum">•</span>Learning more about the world helps you to ______ your own understanding and knowledge about things.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="combination" id="book1006">
+      <span class="qnum">•</span>His photography stands out because it&#x27;s a ______ of clever angles and a concern for wildlife.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Time phrases from the Unit 6 wordlist</h3><div class="wordbank">at the last minute · be in the middle of doing sth · be on the point of doing sth · be running late · every other day · in no time · sooner or later</div><div class="q " data-type="fill" data-free="false" data-answer="every other day" id="book1007">
+      <span class="qnum">•</span>I&#x27;d get a reminder on my phone about it ______, but I was always ______ going out somewhere else.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="on the point of" id="book1008">
+      <span class="qnum">•</span>Second gap in the same sentence: I was always ______ going out somewhere else.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="sooner or later" id="book1009">
+      <span class="qnum">•</span>______, however, I&#x27;d have to get there — it was just a matter of organising myself.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="in the middle of" id="book1010">
+      <span class="qnum">•</span>I was ______ my breakfast when the phone rang.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="at the last minute" id="book1011">
+      <span class="qnum">•</span>She was cancelling ______!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="running late" id="book1012">
+      <span class="qnum">•</span>I wanted to be there by 11 a.m., but I was ______ as usual.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="in no time" id="book1013">
+      <span class="qnum">•</span>I hopped on the bus and ______ I was at the exhibition.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Word formation</h3><div class="q " data-type="fill" data-free="false" data-answer="strengthen" id="book1014">
+      <span class="qnum">•</span>How do you think it is possible to ______ (strong) a friendship?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="daily" id="book1015">
+      <span class="qnum">•</span>Would you say that you check social media on a ______ (day) basis?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="confidence" id="book1016">
+      <span class="qnum">•</span>What are the best ways to increase a person&#x27;s ______ (confident)?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="environmental" id="book1017">
+      <span class="qnum">•</span>Which ______ (environment) issues are most important in your country?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="educator" id="book1018">
+      <span class="qnum">•</span>What are the three most important qualities an ______ (educate) needs to have?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="height" id="book1019">
+      <span class="qnum">•</span>Do you know your ______ (high) in metres and feet?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div></section>
+<section class="u6"><h2>Unit 6 · UNIT CHECK — Exact Review Exercises</h2><div class="q" data-type="mc" data-free="false" data-answer="been seen" id="book1020">
+      <span class="qnum">•</span>Wild boar haven&#x27;t ___ for many years in the local forests.
+      <div class="opts"><label><input type="radio" name="book1020" value="been seen"> been seen</label><label><input type="radio" name="book1020" value="seen"> seen</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="taken" id="book1021">
+      <span class="qnum">•</span>The production of the film ought to be ___ less time than it did.
+      <div class="opts"><label><input type="radio" name="book1021" value="taken"> taken</label><label><input type="radio" name="book1021" value="have taken"> have taken</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="said" id="book1022">
+      <span class="qnum">•</span>Eagles are ___ to represent power and freedom.
+      <div class="opts"><label><input type="radio" name="book1022" value="said"> said</label><label><input type="radio" name="book1022" value="have said"> have said</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="will be held" id="book1023">
+      <span class="qnum">•</span>The photography competition ___ at the end of the summer term.
+      <div class="opts"><label><input type="radio" name="book1023" value="will be held"> will be held</label><label><input type="radio" name="book1023" value="will hold"> will hold</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="we hadn&#x27;t been told" id="book1024">
+      <span class="qnum">•</span>Unfortunately, ___ about his latest exhibition.
+      <div class="opts"><label><input type="radio" name="book1024" value="it hadn&#x27;t been told"> it hadn&#x27;t been told</label><label><input type="radio" name="book1024" value="we hadn&#x27;t been told"> we hadn&#x27;t been told</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="were being warned" id="book1025">
+      <span class="qnum">•</span>While the children ___ about the dangers of the sea, the surfers were riding the huge waves!
+      <div class="opts"><label><input type="radio" name="book1025" value="should be warned"> should be warned</label><label><input type="radio" name="book1025" value="were being warned"> were being warned</label></div><div class="feedback"></div>
+    </div><h3>Passive forms</h3><div class="q " data-type="fill" data-free="false" data-answer="be made" id="book1026">
+      <span class="qnum">•</span>If you have any doubts whether a one-minute film can ______ (make) successfully, just have a look at some TV adverts.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="can be shown" id="book1027">
+      <span class="qnum">•</span>A lot ______ (show) in a short space of time!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to be hooked" id="book1028">
+      <span class="qnum">•</span>They need ______ (hook) by a beautiful scene or a dramatic event.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="are filmed" id="book1029">
+      <span class="qnum">•</span>If small animals ______ (film), you will need to get down to their level.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="have often been helped" id="book1030">
+      <span class="qnum">•</span>Since I started out, I ______ (often / help) by reading what experts say about my subjects.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="was approached" id="book1031">
+      <span class="qnum">•</span>Once a hedgehog family ______ (approach) by a friend of mine with his camera...
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="was bitten" id="book1032">
+      <span class="qnum">•</span>...his finger ______ (bite) by a very protective mother hedgehog!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="are said" id="book1033">
+      <span class="qnum">•</span>Small animals ______ (say) to be very curious!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Have/Get Something Done & Need Doing</h3><div class="q " data-type="fill" data-free="false" data-answer="needs" id="book1034">
+      <span class="qnum">•</span>What still ______ doing to get the house ready?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="had" id="book1035">
+      <span class="qnum">•</span>Unfortunately, I ______ my new camera stolen.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="got" id="book1036">
+      <span class="qnum">•</span>The teacher ______ the student to explain his viewpoint more clearly to the class.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="need" id="book1037">
+      <span class="qnum">•</span>My friends didn&#x27;t ______ to be asked — they all helped me voluntarily.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="having" id="book1038">
+      <span class="qnum">•</span>Stella is ______ her room painted red and black!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="get" id="book1039">
+      <span class="qnum">•</span>I&#x27;m going to ______ this project done today.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Open cloze: The importance of visual images</h3><div class="q " data-type="fill" data-free="false" data-answer="been" id="book1040">
+      <span class="qnum">•</span>I&#x27;ve ______ doing some research into that area as part of my studies.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="will" id="book1041">
+      <span class="qnum">•</span>I&#x27;m hoping that you ______ be able to help through your feedback.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="are" id="book1042">
+      <span class="qnum">•</span>Think about the different ways we ______ affected by what we see around us.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="have" id="book1043">
+      <span class="qnum">•</span>Large companies pay a lot of money to ______ their products advertised.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="being" id="book1044">
+      <span class="qnum">•</span>Have you ever had to follow instructions as they were ______ given to you by another person?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="if" id="book1045">
+      <span class="qnum">•</span>Would it have helped ______ that person had given you some diagrams to follow?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="more" id="book1046">
+      <span class="qnum">•</span>Visual instructions through images are far ______ successful than spoken or written instructions.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to" id="book1047">
+      <span class="qnum">•</span>Now I&#x27;m going to get you ______ try these theories out as an experiment.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div></section>
+<section class="u7"><h2>Unit 7 · Vocabulary — Exact Book Exercises</h2><div class="wordbank">e-book · ending · illustrations · novel · paperback · passage · print · publisher · series</div><div class="q " data-type="fill" data-free="false" data-answer="illustrations" id="book1048">
+      <span class="qnum">•</span>There are lots of eye-catching ______ in the book, so children will love it.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="paperback" id="book1049">
+      <span class="qnum">•</span>It&#x27;s a great book but I&#x27;ll wait until it&#x27;s out as a ______ because it&#x27;s cheaper.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="passage" id="book1050">
+      <span class="qnum">•</span>Did you read the ______ near the end where he surprises her at home?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="publisher" id="book1051">
+      <span class="qnum">•</span>The ______ has arranged for the author to sign her books at our school.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="print" id="book1052">
+      <span class="qnum">•</span>They should read the book more carefully before they ______ it.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="novel" id="book1053">
+      <span class="qnum">•</span>A Suitable Boy is a 1,349-page ______ by Vikram Seth.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="ending" id="book1054">
+      <span class="qnum">•</span>Shh, don&#x27;t tell me what happens. You&#x27;ll ruin the ______ for me.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="series" id="book1055">
+      <span class="qnum">•</span>The Maze Runner by James Dashner is a ______ of books.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="e-book" id="book1056">
+      <span class="qnum">•</span>The screen is well lit, so you can even read your ______ when you&#x27;re sunbathing.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Phrasal verbs — match meaning</h3><div class="q " data-type="fill" data-free="false" data-answer="figure out" id="book1057">
+      <span class="qnum">•</span>understand something after thinking about it
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="cheer up" id="book1058">
+      <span class="qnum">•</span>become happier or make someone happier
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="leave out" id="book1059">
+      <span class="qnum">•</span>not include
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="go for" id="book1060">
+      <span class="qnum">•</span>choose
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="fall for" id="book1061">
+      <span class="qnum">•</span>be tricked into believing something is true
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="give in" id="book1062">
+      <span class="qnum">•</span>finally agree to something
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="look up" id="book1063">
+      <span class="qnum">•</span>get better
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="take in" id="book1064">
+      <span class="qnum">•</span>understand and remember
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Are we obsessed with a Hollywood Happy Ending?</h3><div class="q " data-type="fill" data-free="false" data-answer="figure out" id="book1065">
+      <span class="qnum">•</span>We try to ______ how it all went so disastrously wrong for the main character.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="leave out" id="book1066">
+      <span class="qnum">•</span>Some film makers and writers ______ the nasty stuff deliberately...
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="cheer up" id="book1067">
+      <span class="qnum">•</span>...in order to provide a happy ending that will ______ their audience.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="take in" id="book1068">
+      <span class="qnum">•</span>The film industry provides us with complicated plots that are hard to ______.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="fall for" id="book1069">
+      <span class="qnum">•</span>We aren&#x27;t going to ______ the Hollywood view that life is amazing just because we watch happy endings.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="give in" id="book1070">
+      <span class="qnum">•</span>It&#x27;s time for film makers to ______ and offer a balance of stories with both happy and sad endings.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div></section>
+<section class="u7"><h2>Unit 7 · Use of English — Exact Book Practice</h2><div class="q " data-type="fill" data-free="false" data-answer="not to tell" id="book1071">
+      <span class="qnum">•</span>He promised ______ (not tell) her the ending of the film.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="seeing" id="book1072">
+      <span class="qnum">•</span>Sam boasted about ______ (see) lots of celebrities at the film premiere.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to switch off" id="book1073">
+      <span class="qnum">•</span>Everyone was reminded ______ (switch off) their mobile phones in the cinema.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="booking" id="book1074">
+      <span class="qnum">•</span>They recommend ______ (book) tickets for the new Bond film as it&#x27;s so popular.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to meet" id="book1075">
+      <span class="qnum">•</span>We all agreed ______ (meet) outside the cinema at 7 p.m.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to take up" id="book1076">
+      <span class="qnum">•</span>My parents really encouraged me ______ (take up) acting.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Open cloze: Teen’s work to hit the big screen!</h3><div class="q " data-type="fill" data-free="false" data-answer="that" id="book1077">
+      <span class="qnum">•</span>His mother suggested ______ he swapped his ripped jeans for something smarter.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="him" id="book1078">
+      <span class="qnum">•</span>Marley&#x27;s teacher had persuaded ______ to enter a scriptwriting competition.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="about" id="book1079">
+      <span class="qnum">•</span>Having forgotten ______ it, he was really surprised...
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="on" id="book1080">
+      <span class="qnum">•</span>...waiting to congratulate him ______ winning the competition.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to" id="book1081">
+      <span class="qnum">•</span>Teen Connections encourages teenage writers and experienced directors ______ work together.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="be" id="book1082">
+      <span class="qnum">•</span>The films they produce are thought to ______ seen by approximately 15 to 20 million people.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="into" id="book1083">
+      <span class="qnum">•</span>Marley&#x27;s winning script will be turned ______ a short film.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="his" id="book1084">
+      <span class="qnum">•</span>He can&#x27;t believe ______ luck!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Multiple-choice cloze: Would you let a stranger read your text messages?</h3><div class="q" data-type="mc" data-free="false" data-answer="dedicated" id="book1085">
+      <span class="qnum">•</span>Documentary makers who are ___ to showing real life stories...
+      <div class="opts"><label><input type="radio" name="book1085" value="focused"> focused</label><label><input type="radio" name="book1085" value="dedicated"> dedicated</label><label><input type="radio" name="book1085" value="concerned"> concerned</label><label><input type="radio" name="book1085" value="enthusiastic"> enthusiastic</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="of" id="book1086">
+      <span class="qnum">•</span>They&#x27;re aware ___ the fact that online conversations... 
+      <div class="opts"><label><input type="radio" name="book1086" value="of"> of</label><label><input type="radio" name="book1086" value="to"> to</label><label><input type="radio" name="book1086" value="in"> in</label><label><input type="radio" name="book1086" value="at"> at</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="involved" id="book1087">
+      <span class="qnum">•</span>The teens who are ___ in such documentaries...
+      <div class="opts"><label><input type="radio" name="book1087" value="committed"> committed</label><label><input type="radio" name="book1087" value="involved"> involved</label><label><input type="radio" name="book1087" value="chosen"> chosen</label><label><input type="radio" name="book1087" value="picked"> picked</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="limited" id="book1088">
+      <span class="qnum">•</span>It&#x27;s not ___ to texts.
+      <div class="opts"><label><input type="radio" name="book1088" value="reserved"> reserved</label><label><input type="radio" name="book1088" value="defined"> defined</label><label><input type="radio" name="book1088" value="fixed"> fixed</label><label><input type="radio" name="book1088" value="limited"> limited</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="on" id="book1089">
+      <span class="qnum">•</span>Every picture, video, tweet and status update can appear ___ screen.
+      <div class="opts"><label><input type="radio" name="book1089" value="on"> on</label><label><input type="radio" name="book1089" value="in"> in</label><label><input type="radio" name="book1089" value="at"> at</label><label><input type="radio" name="book1089" value="to"> to</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="person" id="book1090">
+      <span class="qnum">•</span>Teens are often reluctant to say things in ___.
+      <div class="opts"><label><input type="radio" name="book1090" value="body"> body</label><label><input type="radio" name="book1090" value="real"> real</label><label><input type="radio" name="book1090" value="person"> person</label><label><input type="radio" name="book1090" value="face"> face</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="respectful" id="book1091">
+      <span class="qnum">•</span>TV companies have to be ___ of people&#x27;s privacy.
+      <div class="opts"><label><input type="radio" name="book1091" value="polite"> polite</label><label><input type="radio" name="book1091" value="loyal"> loyal</label><label><input type="radio" name="book1091" value="kind"> kind</label><label><input type="radio" name="book1091" value="respectful"> respectful</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="at" id="book1092">
+      <span class="qnum">•</span>You may be horrified ___ the idea of this twist.
+      <div class="opts"><label><input type="radio" name="book1092" value="to"> to</label><label><input type="radio" name="book1092" value="at"> at</label><label><input type="radio" name="book1092" value="in"> in</label><label><input type="radio" name="book1092" value="of"> of</label></div><div class="feedback"></div>
+    </div><div class="q" data-type="mc" data-free="false" data-answer="addicted" id="book1093">
+      <span class="qnum">•</span>However, I bet you&#x27;ll get ___ to it!
+      <div class="opts"><label><input type="radio" name="book1093" value="obsessed"> obsessed</label><label><input type="radio" name="book1093" value="hooked"> hooked</label><label><input type="radio" name="book1093" value="addicted"> addicted</label><label><input type="radio" name="book1093" value="gripped"> gripped</label></div><div class="feedback"></div>
+    </div></section>
+<section class="u7"><h2>Unit 7 · UNIT CHECK — Exact Review Exercises</h2><div class="q " data-type="fill" data-free="false" data-answer="main character" id="book1094">
+      <span class="qnum">•</span>The person with the biggest role or part in a play, book or film.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="series" id="book1095">
+      <span class="qnum">•</span>A set of books or TV/radio programmes with the same characters or on the same subject.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="complicated plot" id="book1096">
+      <span class="qnum">•</span>A sequence of events that is difficult to understand or follow.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="publisher" id="book1097">
+      <span class="qnum">•</span>A person or company who arranges the writing, production and sale of books and magazines.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="passage" id="book1098">
+      <span class="qnum">•</span>A short part of a book or poem.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="unexpected twist" id="book1099">
+      <span class="qnum">•</span>A sudden or surprising change in a situation or series of events.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Phrasal verbs, prepositional phrases and adjective + preposition</h3><div class="q " data-type="fill" data-free="false" data-answer="a guess" id="book1100">
+      <span class="qnum">•</span>I&#x27;m not sure but at ______ I&#x27;d say we&#x27;re nearly there.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="typical" id="book1101">
+      <span class="qnum">•</span>Charlie has left his book at home again. That&#x27;s so ______ of him!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="look" id="book1102">
+      <span class="qnum">•</span>Guess what? My book&#x27;s going to be printed. Things are finally beginning to ______ up for me!
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="figure" id="book1103">
+      <span class="qnum">•</span>The book was very confusing. Half the time I couldn&#x27;t ______ out what was happening.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="short notice" id="book1104">
+      <span class="qnum">•</span>I&#x27;m sorry to ask this at ______ but could you spare five minutes to read my story?
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="slow" id="book1105">
+      <span class="qnum">•</span>She&#x27;s very ______ at reading because of a problem with her eyesight.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Reported statements and questions</h3><div class="q " data-type="fill" data-free="false" data-answer="if I was going to watch the film the following" id="book1106">
+      <span class="qnum">•</span>Will asked me ______ week. (Are you going to watch the film next week?)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="she had written her" id="book1107">
+      <span class="qnum">•</span>Emma said ______ first short story. (I&#x27;ve written my first short story.)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="to send her" id="book1108">
+      <span class="qnum">•</span>She told them ______ a text with the title of the book. (Send me a text with the title of the book.)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="if he could see her that" id="book1109">
+      <span class="qnum">•</span>He asked her ______ evening. (Can I see you this evening?)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="she hadn&#x27;t enjoyed writing" id="book1110">
+      <span class="qnum">•</span>She said ______ her first novel. (She didn&#x27;t enjoy writing her first novel.)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="he would love" id="book1111">
+      <span class="qnum">•</span>They told him ______ the new TV series. (You&#x27;ll love the new TV series.)
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Key word transformations — reporting verbs</h3><div class="q " data-type="fill" data-free="false" data-answer="apologised for missing" id="book1112">
+      <span class="qnum">•</span>Lucy ______ the film. (I&#x27;m sorry we missed the film.) — APOLOGISED
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="reminded him to take" id="book1113">
+      <span class="qnum">•</span>Joe&#x27;s mum ______ the cinema tickets. (Don&#x27;t forget to take your cinema tickets.) — REMINDED
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="denied telling Becky" id="book1114">
+      <span class="qnum">•</span>Sam ______ the ending to the film. (I didn&#x27;t tell Becky the ending to the film.) — DENIED
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="threatened to stop the film" id="book1115">
+      <span class="qnum">•</span>Their dad ______ if they weren&#x27;t quiet. (I&#x27;ll stop the film if you&#x27;re not quiet!) — THREATENED
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><h3>Reporting verbs in context: Sad films make you happier!</h3><div class="q " data-type="fill" data-free="false" data-answer="invited" id="book1116">
+      <span class="qnum">•</span>When a friend recently ______ me to watch a film at her house...
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="agreed" id="book1117">
+      <span class="qnum">•</span>I ______ to go as we both needed a break from revision.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="recommended" id="book1118">
+      <span class="qnum">•</span>However, when she ______ watching a sad film, I was shocked.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="warned" id="book1119">
+      <span class="qnum">•</span>I ______ her that it was a bad idea...
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="insisted" id="book1120">
+      <span class="qnum">•</span>But she ______ that a sad film would make us feel good.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="persuaded" id="book1121">
+      <span class="qnum">•</span>As I didn&#x27;t believe her, she ______ me to do some research.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="admitted" id="book1122">
+      <span class="qnum">•</span>People who watched sad films ______ that the films had made them ask questions about their own life.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="denied" id="book1123">
+      <span class="qnum">•</span>The majority of them ______ feeling sadder.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div><div class="q " data-type="fill" data-free="false" data-answer="advised" id="book1124">
+      <span class="qnum">•</span>The study ______ me that I should watch sad films.
+      <input type="text" placeholder="Your answer">
+      <div class="feedback"></div>
+    </div></section>
+<section class="mixed">
+<h2>Reading Text</h2>
+<div class="reading-text">People often assume that photographs show reality exactly as it happened. However, digital technology has made that assumption much less reliable. Images can be edited within seconds, and artificial intelligence can now create convincing pictures of events that never took place.
+
+This does not mean that visual information is useless. Photographs remain powerful because they can communicate complicated ideas immediately. A single image can attract attention, create an emotional reaction and encourage people to learn more about an issue.
+
+The difficulty is deciding how much to trust. Experts recommend checking the source, comparing the image with reports from other organisations and thinking about the reason why it was published. Context matters too. A genuine photograph can still create a misleading impression if important information is left out.
+
+Stories online create a similar problem. An exciting narrative can spread quickly even when it is inaccurate. Readers therefore need to ask not only whether a story is interesting, but also whether the claims can be supported by reliable evidence.
+
+Being critical does not mean distrusting everything. It means taking enough time to examine information before accepting or sharing it.</div>
+<p class="small">Answer the Reading questions in the section above.</p>
+</section>
+
+
+<section class="mixed">
+<h2>Listening · GitHub-ready audio section</h2>
+<div class="sourcebox"><b>Upload the audio files separately to GitHub.</b> Create an <code>audio</code> folder next to <code>index.html</code>. The page is already configured for the filenames shown below. If you use different names, change the <code>src</code> attribute.</div>
+<div class="listening-grid">
+<div class="listen-card">
+<h3>Unit 6 · Track 6.10</h3>
+<audio controls preload="metadata" src="audio/u6_6-10.mp3" style="width:100%"></audio>
+<p class="small">Expected GitHub path: <code>audio/u6_6-10.mp3</code></p>
+<p><b>Complete the sentences with the correct form of “have/get something done” or “need doing”.</b></p>
+<ol>
+<li>Alice has got Bruno <input type="text" id="lu6_1" placeholder="..."></li>
+<li>Alice has had Katy <input type="text" id="lu6_2" placeholder="..."></li>
+<li>Alice is having some party hats <input type="text" id="lu6_3" placeholder="..."></li>
+<li>The presents don’t <input type="text" id="lu6_4" placeholder="..."></li>
+<li>Alice hasn’t <input type="text" id="lu6_5" placeholder="..."></li>
+<li>Nothing else <input type="text" id="lu6_6" placeholder="..."></li>
+</ol>
+<p class="small">The textbook page supplies the prompts but not the audio answers. These six fields are therefore excluded from the automatic score until the audio/key is added.</p>
+</div>
+<div class="listen-card">
+<h3>Unit 7 · Tracks 7.12–7.15</h3>
+<audio controls preload="metadata" src="audio/u7_7-12_7-13.mp3" style="width:100%"></audio>
+<p class="small"><code>audio/u7_7-12_7-13.mp3</code></p>
+<p><b>7.12–7.13:</b> Listen to six people. At the beep, write word(s) from the <em>Other</em> section of the Unit 7 wordlist.</p>
+<ol>
+<li><input type="text" id="lu7a_1"></li><li><input type="text" id="lu7a_2"></li><li><input type="text" id="lu7a_3"></li>
+<li><input type="text" id="lu7a_4"></li><li><input type="text" id="lu7a_5"></li><li><input type="text" id="lu7a_6"></li>
+</ol>
+<audio controls preload="metadata" src="audio/u7_7-14_7-15.mp3" style="width:100%"></audio>
+<p class="small"><code>audio/u7_7-14_7-15.mp3</code></p>
+<p><b>7.14:</b> Which types of literature do they mention?</p>
+<div class="opts">
+<label><input type="checkbox"> graphic novels</label>
+<label><input type="checkbox"> historical stories</label>
+<label><input type="checkbox"> horror stories</label>
+<label><input type="checkbox"> love stories</label>
+<label><input type="checkbox"> sci-fi stories</label>
+</div>
+<p><b>7.15:</b> Put the words in the correct order to form sentences. These are autocorrected because the words are visible on the page.</p>
+</div>
+</div>
+
+<div class="q" data-type="fill" data-free="false" data-answer="Kate asked Matt what his book was about" id="listen_order_1"><b>1.</b> Matt book what his was about Kate asked
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+<div class="q" data-type="fill" data-free="false" data-answer="Matt's teacher suggested reading it" id="listen_order_2"><b>2.</b> it Matt’s suggested teacher reading
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+<div class="q" data-type="fill" data-free="false" data-answer="Kate wanted to know if it was like a comic book" id="listen_order_3"><b>3.</b> wanted to book know if a comic the Kate was like
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+<div class="q" data-type="fill" data-free="false" data-answer="Matt explained that the pictures had helped him" id="listen_order_4"><b>4.</b> Matt that helped the pictures had him explained
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+<div class="q" data-type="fill" data-free="false" data-answer="Matt denied that the story was scary" id="listen_order_5"><b>5.</b> denied story that the was Matt scary
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+<div class="q" data-type="fill" data-free="false" data-answer="Kate insisted that Matt try a graphic story" id="listen_order_6"><b>6.</b> Kate Matt that a insisted graphic story try
+<input type="text" placeholder="Write the sentence"><div class="feedback"></div></div>
+
+<p>Original online listening models:</p>
+<p><a class="btn secondary" href="https://www.liveworksheets.com/node/6776985" target="_blank" rel="noopener">Unit 6 Liveworksheet</a>
+<a class="btn secondary" href="https://www.liveworksheets.com/node/6806455" target="_blank" rel="noopener">Unit 7 Liveworksheet</a></p>
+</section>
+
+
+<section class="mixed writing">
+<h2>Writing 1 · Personal Blog Post (140–190 words)</h2>
+<div class="sourcebox"><b>Write about yourself:</b> Think of a real time when something you saw — a photograph, video, post, documentary, advert or news story — changed your opinion about a person, place, animal, environmental issue or social topic.</div>
+<p>Explain <b>what you saw</b>, <b>what you believed before</b>, <b>how your viewpoint changed</b>, and <b>what you think now</b>. Try to use Unit 6 language such as <em>perspective, influence, environmental, dramatically, in the middle of, sooner or later</em> and at least one passive structure.</p>
+<textarea id="writing1" placeholder="Write 140–190 words about a real experience from your life..."></textarea>
+<p class="small">This is a personal response and is not automatically graded. Word count is included in the final result panel.</p>
+</section>
+
+
+<section class="u7 writing">
+<h2>Writing 2 · A True Story About You (140–190 words)</h2>
+<div class="sourcebox"><b>Write a true story from your own life.</b> Describe a conversation or event in which somebody <em>advised, warned, persuaded, invited, reminded, encouraged</em> or <em>recommended</em> something to you — and explain what happened afterwards.</div>
+<p>Use at least <b>three reporting verbs</b>, one example of <b>reported speech</b>, two Unit 7 phrasal verbs, and descriptive story language such as <em>unexpected twist, memorable, special effects, final scene</em> where appropriate.</p>
+<textarea id="writing2" placeholder="Write 140–190 words about a true event from your life..."></textarea>
+<p class="small">Personal response — not automatically graded.</p>
+</section>
+
+<section class="mixed">
+<h2>Speaking · Integrated Units 6–7</h2>
+<h3>Part 1</h3>
+<p>1. Do you enjoy taking photographs? Why? &nbsp; 2. Where do you usually get your news? &nbsp; 3. What kinds of stories do you enjoy? &nbsp; 4. Have you ever changed your opinion because of something you saw or read?</p>
+<h3>Part 2 · Long Turn</h3>
+<p>Compare two ways of getting information: <b>social media vs television/news websites</b>. Talk about reliability, convenience, entertainment, speed and influence.</p>
+<h3>Part 3 · Collaborative Task</h3>
+<p>Your school wants students to become better at recognising unreliable information online. Discuss: <b>workshops · posters · school social media · videos · guest speakers</b>. Decide which two would be most effective.</p>
+<textarea id="speakingnotes" placeholder="Teacher notes / speaking feedback..."></textarea>
+</section>
+
+<section class="mixed" id="finalResult">
+<h2>Final Result</h2>
+<p class="scorebox" id="finalScore">Complete the test and press “Finish test”.</p>
+<button onclick="finishTest()">Finish test</button>
+<div id="breakdown" class="sourcebox" style="margin-top:12px"></div>
+<p id="writingCounts" class="small"></p>
+<p class="small">The final percentage includes all objective autocorrected items. Personal Writing/Speaking and listening tasks without an available audio answer key are shown separately and are not penalised.</p>
+</section>
+<section class="mixed no-print">
+<h2>Teacher / Self-check Tools</h2>
+<button onclick="checkAll()">Check objective answers</button>
+<button class="secondary" onclick="showModelAnswers()">Show model answers for rewriting</button>
+<details id="models"><summary>Model answers for open rewriting tasks</summary><div id="modelContent"></div></details>
+</section>
+</main>
+
+<script>
+const objectiveIds = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20", "q21", "q22", "q23", "q24", "q25", "q26", "q27", "q28", "q29", "q30", "q31", "q32", "q33", "q34", "q35", "q36", "q37", "q38", "q39", "q40", "q41", "q42", "q43", "q44", "q45", "q46", "q47", "q48", "q49", "q50", "q51", "q52", "q53", "q54", "q55", "q56", "q57", "q58", "q59", "q60", "q61", "q62", "q63", "q64", "q65", "q66", "q67", "q68", "q69", "q70", "q89", "q90", "q91", "q92", "q93", "q94", "q95", "q96", "q97", "q98", "q99", "q100", "q101", "q102", "q103", "q104", "q105", "q106", "q107", "q108", "q131", "q132", "q133", "q134", "q135", "q136", "q137", "q138", "q139", "q140", "q141", "q142", "q143", "q144", "q145", "q146", "q147", "q148", "q149", "q150", "q151", "q152", "q153", "q154", "q155", "q156"];
+function norm(s) {
+  return (s||"").toLowerCase().trim().replace(/[’‘]/g,"'").replace(/\s+/g," ").replace(/[.?!]+$/,"");
+}
+function checkAll(){
+ let correct=0,total=0,answered=0;
+ document.querySelectorAll('.q').forEach(q=>{
+   const free=q.dataset.free==="true";
+   const fb=q.querySelector('.feedback');
+   if(free){ fb.textContent='Teacher/self-check item'; fb.className='feedback small'; return; }
+   total++;
+   let val="";
+   if(q.dataset.type==="mc"){
+      const c=q.querySelector('input[type=radio]:checked'); val=c?c.value:"";
+   } else {
+      val=q.querySelector('input[type=text]').value;
+   }
+   if(val) answered++;
+   const answers=(q.dataset.answer||"").split("||").map(norm);
+   if(answers.includes(norm(val))){
+      correct++; fb.textContent="✓ Correct"; fb.className="feedback correct";
+   } else {
+      fb.textContent=val ? "✗ Check this answer" : "Not answered";
+      fb.className=val ? "feedback wrong" : "feedback small";
+   }
+ });
+ const pct= total ? Math.round(correct/total*100) : 0;
+ document.getElementById('score').textContent=`Score: ${correct} / ${total} (${pct}%) · Answered ${answered}/${total}`;
+ document.getElementById('bar').style.width=pct+"%";
+ saveProgress();
+}
+function saveProgress(){
+ const state={};
+ document.querySelectorAll('input,textarea').forEach((el,i)=>{
+   if(el.type==="radio") state["r:"+el.name+":"+el.value]=el.checked;
+   else state["f:"+el.id+":"+i]=el.value;
+ });
+ localStorage.setItem("goldB2u67",JSON.stringify(state));
+}
+function loadProgress(){
+ const raw=localStorage.getItem("goldB2u67"); if(!raw)return;
+ const state=JSON.parse(raw);
+ document.querySelectorAll('input,textarea').forEach((el,i)=>{
+   if(el.type==="radio") el.checked=!!state["r:"+el.name+":"+el.value];
+   else if(state["f:"+el.id+":"+i]!==undefined) el.value=state["f:"+el.id+":"+i];
+ });
+}
+function resetAll(){
+ if(!confirm("Clear all answers and saved progress?")) return;
+ localStorage.removeItem("goldB2u67");
+ document.querySelectorAll('input[type=text],input[type=date],textarea').forEach(x=>x.value="");
+ document.querySelectorAll('input[type=radio]').forEach(x=>x.checked=false);
+ document.querySelectorAll('.feedback').forEach(x=>x.textContent="");
+ document.getElementById('score').textContent="Score: —";
+ document.getElementById('bar').style.width="0%";
+}
+function showModelAnswers(){
+ const arr=[];
+ document.querySelectorAll('.q[data-free="true"]').forEach(q=>{
+   arr.push(`<p><b>${q.querySelector('.qnum').textContent}</b> ${q.dataset.answer}</p>`);
+ });
+ document.getElementById('modelContent').innerHTML=arr.join("");
+ document.getElementById('models').open=true;
+}
+
+function wordCount(id){
+  const el=document.getElementById(id); if(!el) return 0;
+  const t=(el.value||"").trim(); return t ? t.split(/\s+/).length : 0;
+}
+function finishTest(){
+  checkAll();
+  let correct=0,total=0;
+  const groups={};
+  document.querySelectorAll('.q').forEach(q=>{
+    if(q.dataset.free==="true") return;
+    let val="";
+    if(q.dataset.type==="mc"){
+      const c=q.querySelector('input[type=radio]:checked'); val=c?c.value:"";
+    }else{
+      const i=q.querySelector('input[type=text]'); val=i?i.value:"";
+    }
+    const answers=(q.dataset.answer||"").split("||").map(norm);
+    const ok=answers.includes(norm(val));
+    total++; if(ok) correct++;
+    const sec=q.closest('section');
+    const title=sec && sec.querySelector('h2') ? sec.querySelector('h2').textContent : "Other";
+    if(!groups[title]) groups[title]=[0,0];
+    groups[title][1]++; if(ok) groups[title][0]++;
+  });
+  const pct=total?Math.round(correct/total*100):0;
+  document.getElementById('finalScore').textContent=`Final objective result: ${correct} / ${total} = ${pct}%`;
+  document.getElementById('breakdown').innerHTML=Object.entries(groups).map(([k,v])=>`<div><b>${k}</b>: ${v[0]}/${v[1]}</div>`).join("");
+  document.getElementById('writingCounts').textContent=`Writing 1: ${wordCount("writing1")} words · Writing 2: ${wordCount("writing2")} words`;
+  document.getElementById('finalResult').scrollIntoView({behavior:"smooth"});
+}
+
+window.addEventListener('load',loadProgress);
+window.addEventListener('beforeunload',saveProgress);
+</script>
+</body>
+</html>
